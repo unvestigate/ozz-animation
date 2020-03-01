@@ -1,5 +1,10 @@
 cmake_minimum_required (VERSION 3.1)
 
+# Added for Basis.
+if(WIN32)
+    set(CMAKE_SYSTEM_VERSION 8.1 CACHE TYPE INTERNAL FORCE)
+endif()
+
 # Defines the project's name
 project(ozz)
 
